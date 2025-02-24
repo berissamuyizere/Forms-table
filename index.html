@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        form {
+            border: 1px solid;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+
+
+        }
+
+        #input {
+            padding: 15px 12px;
+            width: 90%;
+            margin-top: 15px;
+        }
+
+        #submit_button {
+            background: none;
+            background-color: black;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 12px 8px;
+            color: white;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 95%;
+
+        }
+
+        /* #label{
+          text-align: center;
+        } */
+        form label {
+            margin-top: 7px;
+        }
+
+        #check {
+            margin-top: 10px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #signup {
+            /* display: flex;
+            flex-direction: row; */
+        }
+
+        #div1 {
+            margin-top: 30px;
+            /* background-color: blue; */
+        }
+
+        #icons {
+            display: flex;
+            /* align-content: center;
+            j */
+            justify-content: center;
+            gap: 48px;
+
+        }
+
+        #hr-lines:before {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 130px;
+            position: absolute;
+            top: 30%;
+            /* left: 0; */
+            background: black
+        }
+
+        #hr-lines {
+            position: relative;
+        }
+
+        #hr-lines {
+            position: relative;
+            /*  new lines  */
+            max-width: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #hr-lines:after {
+            content: " ";
+            height: 2px;
+            width: 130px;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 30%;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+
+        <form>
+            <label for="">Already have an Account ? <strong>Sign in</strong></label>
+            <br>
+            <label id="label">Sign Up</label>
+            <label for="first_name">Name </label>
+            <br>
+            <input type="text" placeholder="Enter last name" id="input" />
+            <br>
+            <label for="Email">Email</label>
+            <br>
+            <input type="Email" placeholder="Enter email address" id="input" />
+            <br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" placeholder="Enter password" id="input" />
+            <br>
+            <div id="check">
+                <input type="checkbox" id="box">
+                <label for=""> I've Read And Agree With <strong>The Terms Of Service </strong> And Our <strong>Privacy
+                        Policy</strong> </label>
+            </div>
+            <br>
+            <button type="submit" id="submit_button">Sign Up</button>
+            <h6 id="hr-lines">or sign up with</h6>
+            <span id="icons">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </span>
+
+        </form>
+    </div>
+</body>
+
+</html>

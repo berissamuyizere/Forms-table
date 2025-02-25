@@ -13,19 +13,22 @@
     <style>
         form {
             border: 1px solid whitesmoke;
-            width:550px;
+            width: 550px;
             padding: 10px;
             /* margin-top: 60px; */
             height: 650px;
             background-color: whitesmoke;
-            box-shadow: 5px 5px  5px  5px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 
         }
+
         #input {
             padding: 15px 12px;
             width: 90%;
             margin-bottom: 10px;
             margin-top: 10px;
+            /* border-color: ; */
+            border: 1px solid rgb(187, 184, 184);
         }
 
         #submit_button {
@@ -65,7 +68,7 @@
             gap: 48px;
 
         }
-      
+
 
         #hr-lines:before {
             content: " ";
@@ -81,6 +84,7 @@
         #hr-lines {
             position: relative;
         }
+
         #hr-lines {
             position: relative;
             /*  new lines  */
@@ -99,14 +103,17 @@
             top: 50%;
             right: 0;
         }
-        #label{
-            top: 10px ;
+
+        #label {
+            top: 10px;
             font-weight: bold;
         }
-        i{
-           font-size: 30px;
+
+        i {
+            font-size: 30px;
         }
-      /* #submit_button  a {
+
+        /* #submit_button  a {
             color: white;
             text-decoration: none;
         } */
@@ -116,37 +123,42 @@
 <body>
 
     <div id="div1">
-       
+
 
         <form>
-            <div >
-            <label for="">Don't have an Account ? <a href="index.html" style="color: black; text-decoration: none;">Sign up</a><strong></strong></label>
-            <br>
-            <h1 id="label">Sign In</h1>
-            <br>
-            <label for="Email">Email:</label>
-            <br>
-            <input type="Email" placeholder="Enter email address" id="input" required />
-            <br>
-            <label for="password">Password:</label>
-            <br>
-            <input type="password" placeholder="Enter password" id="input" required/>
-            <br>
-            <div id="check">
-                <input type="checkbox" id="box" required>
-                <label for=""> I've Read And Agree With <strong>The Terms Of Service </strong> And Our <strong>Privacy
-                        Policy</strong> </label>
+            <div style="margin-top: 50px; margin-left: 5px;">
+                <label for="">Don't have an Account ? <a href="index.html"
+                        style="color: black; text-decoration: none;">Sign up</a><strong></strong></label>
+                <br>
+                <h1 id="label">Sign In</h1>
+                <br>
+                <label for="Email">Email:</label>
+                <br>
+                <input type="Email" placeholder="Enter email address" id="input" required />
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" placeholder="Enter password" id="input" required />
+                <br>
+                <div id="check">
+                    <input type="checkbox" id="box" required>
+                    <label for=""> I've Read And Agree With <strong>The Terms Of Service </strong> And Our
+                        <strong>Privacy
+                            Policy</strong> </label>
+                </div>
+                <br>
+                <button type="submit" id="submit_button"><a href="Table.html"
+                        style="color: white; text-decoration: none;">Sign In</a></button>
+                <h6 id="hr-lines" style="font-size: 15px;">or sign in with</h6>
+                <span id="icons">
+                    <i class="fa-brands fa-google"
+                        style="box-shadow: 5px 5px  6px  5px rgba(0, 0, 0, 0.2); background-color: whitesmoke;"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </span>
             </div>
-            <br>
-            <button type="submit" id="submit_button"><a href="Table.html" style="color: white; text-decoration: none;">Sign In</a></button>
-            <h6 id="hr-lines" style="font-size: 15px;">or sign in with</h6>
-            <span id="icons">
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-facebook"></i>
-            </span>
-        </div>
 
         </form>
     </div>
 </body>
+
 </html>

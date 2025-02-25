@@ -12,26 +12,28 @@
 
     <style>
         form {
-            border: 1px solid;
+            border: 1px solid whitesmoke;
             width:450px;
             padding: 10px;
             margin-top: 60px;
             height: 650px;
             border-radius: 4px;
-            
+            background-color: #ffffff;
+            margin: 100px;
+            box-shadow: 5px 5px  5px  5px rgba(0, 0, 0, 0.3);
 
         }
         #input {
             padding: 15px 12px;
             width: 90%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         #submit_button {
             background: none;
             background-color: black;
             border: 1px solid;
-            border-radius: 4px;
             padding: 12px 8px;
             color: white;
             cursor: pointer;
@@ -39,14 +41,6 @@
             width: 95%;
 
         }
-
-        /* label{
-          text-align: center;
-        } */
-        /* form label {
-            margin-bottom: 25px;
-            /* background-color: blueviolet; */
-
 
         #check {
             margin-top: 10px;
@@ -57,19 +51,17 @@
             justify-content: center;
             width: 100%;
             height: 100%;
+            background-color: #f5f9e9;
         }
 
         #div1 {
-            margin-top: 50px;
-            /* background-color: blue; */
+            /* margin-top: 100px; */
             display: flex;
             justify-content: center;
         }
 
         #icons {
             display: flex;
-            /* align-content: center;
-            j */
             justify-content: center;
             gap: 48px;
 
@@ -82,7 +74,6 @@
             width: 130px;
             position: absolute;
             top: 50%;
-            /* left: 0; */
             background: black
         }
 
@@ -91,7 +82,6 @@
         }
         #hr-lines {
             position: relative;
-            /*  new lines  */
             max-width: 500px;
             margin: 30px auto;
             text-align: center;
@@ -114,6 +104,9 @@
         i{
            font-size: 30px;
         }
+        a link{
+            color: white;
+        }
     </style>
 </head>
 
@@ -124,37 +117,36 @@
 
         <form>
             <div >
-            <label for="">Already have an Account ? <strong>Sign in</strong></label>
+            <label for="">Already have an Account ?  <a href="Login.html" style="color: black; text-decoration: none;">Sign in</a></label>
             <br>
             <h1 id="label">Sign Up</h1>
             <br>
            
-            <label for="first_name" style="margin-bottom: 20px;"> Name </label>
+            <label for="first_name" style="margin-bottom: 20px;"> Name: </label>
             <br>
-            <input type="text" placeholder="Enter last name" id="input" />
+            <input type="text" placeholder="Enter last name" id="input" required/>
             <br>
-            <label for="Email">Email</label>
+            <label for="Email">Email:</label>
             <br>
-            <input type="Email" placeholder="Enter email address" id="input" />
+            <input type="Email" placeholder="Enter email address" id="input" required/>
             <br>
-            <label for="password">Password</label>
+            <label for="password">Password:</label>
             <br>
-            <input type="password" placeholder="Enter password" id="input" />
+            <input type="password" placeholder="Enter password" id="input" required />
             <br>
             <div id="check">
-                <input type="checkbox" id="box">
+                <input type="checkbox" id="box" required>
                 <label for=""> I've Read And Agree With <strong>The Terms Of Service </strong> And Our <strong>Privacy
-                        Policy</strong> </label>
+                 Policy</strong> </label>
             </div>
             <br>
-            <button type="submit" id="submit_button"><a href="Login.html">Sign Up</a></button>
+            <button type="submit" id="submit_button"><a href="Login.html" style="color: white; text-decoration: none;">Sign Up</a></button>
             <h6 id="hr-lines" style="font-size: 15px;">or sign up with</h6>
-            <span id="icons">
-                <i class="fa-brands fa-google"></i>
+            <div id="icons">
+                <i class="fa-brands fa-google"  style="box-shadow: 5px 5px  6px  5px rgba(0, 0, 0, 0.2); background-color: whitesmoke;"></i>
                 <i class="fa-brands fa-facebook"></i>
-            </span>
+            </div>
         </div>
-
         </form>
     </div>
 </body>

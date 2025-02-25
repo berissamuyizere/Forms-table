@@ -12,12 +12,13 @@
 
     <style>
         form {
-            border: 1px solid;
+            border: 1px solid whitesmoke;
             width:450px;
             padding: 10px;
             margin-top: 60px;
             height: 650px;
-            background-color: white;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px  5px  5px rgba(0, 0, 0, 0.3);
 
         }
         #input {
@@ -48,6 +49,7 @@
             justify-content: center;
             width: 100%;
             height: 100%;
+            background-color: white
         }
 
         #div1 {
@@ -61,6 +63,9 @@
             justify-content: center;
             gap: 48px;
 
+        }
+        #box{
+           
         }
 
         #hr-lines:before {
@@ -102,10 +107,10 @@
         i{
            font-size: 30px;
         }
-        a link{
+      /* #submit_button  a {
             color: white;
             text-decoration: none;
-        }
+        } */
     </style>
 </head>
 
@@ -116,25 +121,25 @@
 
         <form>
             <div >
-            <label for="">Don't have an Account ? <strong>Sign up</strong></label>
+            <label for="">Don't have an Account ? <a href="index.html" style="color: black; text-decoration: none;">Sign up</a><strong></strong></label>
             <br>
             <h1 id="label">Sign In</h1>
             <br>
-            <label for="Email">Email</label>
+            <label for="Email">Email:</label>
             <br>
-            <input type="Email" placeholder="Enter email address" id="input" />
+            <input type="Email" placeholder="Enter email address" id="input" required />
             <br>
-            <label for="password">Password</label>
+            <label for="password">Password:</label>
             <br>
-            <input type="password" placeholder="Enter password" id="input" />
+            <input type="password" placeholder="Enter password" id="input" required/>
             <br>
             <div id="check">
-                <input type="checkbox" id="box">
+                <input type="checkbox" id="box" required>
                 <label for=""> I've Read And Agree With <strong>The Terms Of Service </strong> And Our <strong>Privacy
                         Policy</strong> </label>
             </div>
             <br>
-            <button type="submit" id="submit_button"><a href="Table.html">Sign In</a></button>
+            <button type="submit" id="submit_button"><a href="Table.html" style="color: white; text-decoration: none;">Sign In</a></button>
             <h6 id="hr-lines" style="font-size: 15px;">or sign in with</h6>
             <span id="icons">
                 <i class="fa-brands fa-google"></i>
@@ -145,5 +150,4 @@
         </form>
     </div>
 </body>
-
 </html>
